@@ -1,0 +1,7 @@
+{
+  "name": "Online Complaint Management System",
+  "description": "Enterprise-grade role-based complaint and ticket management system with state lifecycle enforcement, REST API, SLA tracking, AI categorization, and Java architecture showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
