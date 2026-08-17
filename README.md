@@ -1,6 +1,10 @@
 # Online Complaint Management System
 ### Spring Boot 3 • Java 17 • React • TypeScript • Gemini AI
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online%20Application-0284c7?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ais-pre-glx4vcvjgqmhkutqttnop7-50948685477.asia-southeast1.run.app)
+
+> 🚀 **Live Demo URL:** [https://ais-pre-glx4vcvjgqmhkutqttnop7-50948685477.asia-southeast1.run.app](https://ais-pre-glx4vcvjgqmhkutqttnop7-50948685477.asia-southeast1.run.app)
+
 A full-stack role-based complaint management system built with Java 17, Spring Boot 3, React, and TypeScript. The system provides complaint submission, admin triage, SLA monitoring, enforced status transitions, Gemini AI-assisted categorization, CSAT feedback, REST APIs, and an interactive Java architecture explorer.
 
 ---

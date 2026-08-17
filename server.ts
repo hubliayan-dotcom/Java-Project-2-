@@ -1115,8 +1115,8 @@ Respond strictly in valid JSON format with keys:
   const ai = getGeminiClient();
 
   if (ai) {
-    // Attempt with primary model gemini-3.7-flash, then fallback to gemini-3.1-flash-lite if experiencing high demand
-    const modelsToTry = ["gemini-3.7-flash", "gemini-3.1-flash-lite"];
+    // Attempt with standard recommended model gemini-2.5-flash, then fallback to fast-lite / resilient heuristics
+    const modelsToTry = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-1.5-flash"];
     
     for (const modelName of modelsToTry) {
       try {
@@ -1140,8 +1140,8 @@ Respond strictly in valid JSON format with keys:
           }
         }
       } catch (error: any) {
-        console.warn(`Gemini model (${modelName}) transient status/high demand:`, error?.message || error);
-        // Continue to fallback model or heuristic
+        // Transient 503 high demand or quota limit - proceed smoothly to next model or resilient heuristic engine
+        continue;
       }
     }
   }
