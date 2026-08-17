@@ -122,6 +122,22 @@ Complaint lifecycle tracking showing the progression of a grievance through the 
 
 ![Complaint Status Tracking](06-complaint-status-tracking.png)
 
+---
+
+### Admin Triage Dashboard
+
+Admin dashboard for centralized complaint triage, assignment, priority management, status tracking, SLA monitoring, and filtering of critical or unassigned complaints.
+
+![Admin Triage Dashboard](/07-admin-triage-dashboard.png)
+
+---
+
+### Resolved Complaint & Closure
+
+Complaint details showing the complete lifecycle from Logged to In Progress, Resolved, and finally Closed, along with the administrative resolution summary and feedback verification.
+
+![Resolved Complaint & Closure](/08-resolved-complaint-closure.png)
+
 ## 4. Project Highlights
 
 - 🔐 **BCrypt + JJWT authentication** with role-based access control
