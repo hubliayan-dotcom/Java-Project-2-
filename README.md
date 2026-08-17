@@ -74,7 +74,55 @@ CLOSED
 
 ---
 
-## 3. Project Highlights
+## 3. Project Screenshots
+
+### User Complaint Dashboard
+
+The user portal provides an overview of submitted complaints, their current status, priority, category, and SLA progress.
+
+![User Complaint Dashboard](01-user-complaint-dashboard.png)
+
+---
+
+### Spring Boot REST API Playground
+
+Interactive REST API playground for testing authentication, user management, complaint management, status transitions, feedback, statistics, and AI categorization endpoints.
+
+![Spring Boot REST API Playground](02-spring-boot-rest-api-playground.png)
+
+---
+
+### Java OOP & Architecture Explorer
+
+Interactive visualization of the project's Java package hierarchy, classes, controllers, services, repositories, and application architecture.
+
+![Java OOP Project Architecture](03-java-oop-project-architecture.png)
+
+---
+
+### Integration & Security Test Suite
+
+Automated integration and security testing interface showing validation results for authentication, RBAC, complaint validation, FSM transitions, and other core functionality.
+
+![Integration Security Test Suite](04-integration-security-test-suite.png)
+
+---
+
+### New Complaint Form
+
+User-facing complaint submission form with AI-assisted category and priority detection, complaint details, and SLA calculation.
+
+![New Complaint Form](05-new-complaint-form.png)
+
+---
+
+### Complaint Status Tracking
+
+Complaint lifecycle tracking showing the progression of a grievance through the enforced state machine.
+
+![Complaint Status Tracking](06-complaint-status-tracking.png)
+
+## 4. Project Highlights
 
 - 🔐 **BCrypt + JJWT authentication** with role-based access control
 - 🔄 **Enforced finite state machine** for complaint lifecycle
@@ -90,7 +138,7 @@ CLOSED
 
 ---
 
-## 4. Enforced State Machine Lifecycle
+## 5. Enforced State Machine Lifecycle
 
 ```
 [ OPEN ] ──(Admin Assign)──> [ IN_PROGRESS ] ──(Admin Resolve)──> [ RESOLVED ]
@@ -118,7 +166,7 @@ CLOSED
 
 ---
 
-## 5. Java OOP Concepts & Architecture
+## 6. Java OOP Concepts & Architecture
 
 | Concept | Implementation in Codebase |
 |---|---|
@@ -134,7 +182,7 @@ CLOSED
 
 ---
 
-## 6. REST API Reference & Interactive Playground
+## 7. REST API Reference & Interactive Playground
 
 **Interactive REST API Playground**: Provides an interactive runner for the application's REST endpoints, including authentication, user management, complaint management, status transitions, feedback, statistics, AI categorization, and demo-data reset. 
 
@@ -165,7 +213,7 @@ All protected endpoints strictly require standard `Authorization: Bearer <token>
 
 ---
 
-## 7. How to Build & Run
+## 8. How to Build & Run
 
 ### Spring Boot 3 Backend (Java 17 + Maven)
 ```bash
@@ -195,7 +243,7 @@ npm start
 
 ---
 
-## 8. Automated Testing Checklist
+## 9. Automated Testing Checklist
 
 The project includes 12 validation and integration checks:
 
@@ -214,7 +262,7 @@ The project includes 12 validation and integration checks:
 
 ---
 
-## 9. Limitations & Future Enhancements
+## 10. Limitations & Future Enhancements
 
 ### Limitations
 - Current demonstration storage uses in-memory repositories.
@@ -234,7 +282,7 @@ The project includes 12 validation and integration checks:
 
 ---
 
-## 10. Architecture & Technical Interview Q&A
+## 11. Architecture & Technical Interview Q&A
 
 1. **Explain your project architecture.** — A role-based complaint management system where users lodge and track complaints with real-time SLA countdowns, and admins triage, assign, and resolve tickets under an enforced finite state machine with BCrypt password hashing, standard JJWT Bearer security, and Gemini 2.5 Flash AI triage.
 2. **Why enums for Status/Priority/Category?** — Ensures compile-time type safety, eliminates typos, enables exhaustive pattern matching in modern Java, and encapsulates domain logic such as SLA deadlines.
